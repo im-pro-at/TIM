@@ -1,0 +1,389 @@
+/*
+  index.css
+  
+  Autor: im-pro
+*/
+
+html, body
+{
+	height: 100%;
+	margin: 0px;
+	word-wrap: break-word;
+}
+.link, a
+{
+	color: #0085cc;
+	cursor: pointer;
+	text-decoration: underline;      
+}
+table
+{
+	border-collapse:collapse;
+}
+label 
+{
+	display:inline-block;
+}
+pre 
+{
+	margin: 0px;
+  font-size: 16px;
+  font-family: Verdana,Arial,sans-serif;
+  white-space: pre-wrap;
+}
+ins
+{
+  color: rgb(0,255,0);
+}
+del
+{
+  color: rgb(255,0,0);
+}
+#head
+{
+  position: fixed;
+  background-color: white;
+}
+#head, #haedtable,#haedtable_search, #placeholder
+{
+	width:100%;
+	height:100px;
+  border:none;
+}
+
+#haedtable_user, #haedtable_add
+{
+	width:80px;
+	height:100px;
+}
+#haedtable_logo
+{
+	width:160px;
+	height:100px;
+}
+#add
+{
+	width: 80px;
+	height: 80px;	
+	background:url('../images/add.png');
+	background-size: 80px 80px;
+	background-repeat: no-repeat;
+  padding-bottom: 20px;
+}
+#add:hover
+{
+	background:url('../images/add_hover.png');
+	background-size: 80px 80px;
+	background-repeat: no-repeat;
+}
+#user
+{
+	width: 80px;
+	height: 80px;	
+	background:url('../images/user.png');
+	background-size: 80px 80px;
+	background-repeat: no-repeat;
+  padding-bottom: 20px;
+}
+#user.active
+{
+	background:url('../images/user_hover.png');
+	background-size: 80px 80px;
+	background-repeat: no-repeat;
+}
+
+#fountainG{
+	position:relative;
+	width: 160px;
+	height: 100px;
+	margin:auto;
+}
+
+.fountainG{
+	position:absolute;
+	bottom:0px;
+	background-color:rgb(0,0,0);
+	width:10px;
+	height:10px;
+	animation-name:bounce_fountainG;
+	animation-duration:1.105s;
+	animation-iteration-count:infinite;
+	animation-direction:normal;
+	-webkit-animation-name:bounce_fountainG;
+	-webkit-animation-duration:1.105s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:normal;
+	transform:scale(.01);
+}
+@-webkit-keyframes bounce_fountainG{
+	0%{
+	transform:scale(1);
+		background-color:rgba(0,133,204,255);
+	}
+
+	100%{
+	transform:scale(.3);
+		background-color:rgba(0,133,204,0);
+	}
+}
+
+#fountainG_1{
+	left:0;
+	animation-delay:0.446s;
+	-webkit-animation-delay:0.446s;
+}
+
+#fountainG_2{
+	left:27px;
+	animation-delay:0.5525s;
+	-webkit-animation-delay:0.5525s;
+}
+
+#fountainG_3{
+	left:55px;
+	animation-delay:0.659s;
+	-webkit-animation-delay:0.659s;
+}
+
+#fountainG_4{
+	left:83px;
+	animation-delay:0.7755s;
+	-webkit-animation-delay:0.7755s;
+}
+
+#fountainG_5{
+	left:111px;
+	animation-delay:0.882s;
+	-webkit-animation-delay:0.882s;
+}
+
+#fountainG_6{
+	left:139px;
+	animation-delay:0.9985s;
+	-webkit-animation-delay:0.9985s;
+}
+
+#searchslider
+{
+	overflow: hidden;
+	height: 100px;
+	width: 100%;
+}
+#sshhash, #sschash, #sshtext, #ssctext
+{
+	float: left;	
+}
+#sshhash, #sshtext
+{
+	width: 80px;
+	height: 80px;	
+		padding: 10px;
+}
+#search
+{
+	width: 80px;
+	height: 80px;
+}
+#search:hover{
+	width: 90px;
+	height: 90px;
+}
+#sschash, #ssctext
+{
+	height: 100px;
+	width: 200px;
+	overflow: hidden;
+	background-color: red;
+}
+#hash_table
+{
+	height: 100px;
+	width: 100%;
+}
+#hash_content_div, #hash_content_td
+{
+	width: 130px;
+	height: 100px;
+	overflow: hidden;
+}
+#hash_content
+{
+	padding-top: 0px;
+	border: none;
+	height: 100px;
+	width: 100px;
+	text-align: center;
+}
+#input_hash
+{
+	margin: 3px;
+	width: 80px;
+} 
+#hashcontainer
+{
+	width: 100%;
+	height: 100%;
+	overflow-x: auto;
+} 
+.tag
+{
+	border-radius: 5px;
+	border: 1px solid rgb(0,0,0);  
+	padding-bottom: 2px;
+	padding-top: 0px;
+	padding-left: 3px;
+	padding-right: 3px;
+  font-size: 16px;
+  line-height: 29px;
+  font-family: Verdana,Arial,sans-serif;
+} 
+.tag, .tag[added]
+{
+	background-color: rgb(0,255,0);
+}
+.tag[exclude], .tag[removed]
+{
+	background-color: rgb(255,0,0);
+}  
+.tag[stayed]
+{
+	background-color: rgb(255,255,255);
+}  
+.delitable .tag, .addable .tag
+{
+	padding-right: 18px;
+	background-size: 18px 18px;
+	background-repeat: no-repeat;
+	background-position: right center;
+}  
+.delitable .tag
+{
+	background-image:url('../images/remove.png');
+}
+.delitable .tag:hover
+{
+	background-image:url('../images/remove_hover.png');
+}  
+.addable .tag
+{
+	background-image:url('../images/add.png');
+}
+.addable .tag:hover
+{
+	background-image:url('../images/add_hover.png');
+}  
+#textserach_content
+{
+	padding-top: 0px;
+  padding-left: 20px;
+	border: none;
+	height: 100px;
+	width: 100%;
+	text-align: left;
+}
+#textserach_content label
+{
+  display: block;
+}
+#input_textsearch
+{
+  width: 80%;
+}
+.ui-selectmenu-button
+{
+	vertical-align: middle;
+}
+.mydialog input, .mydialog label, .mydialog textarea
+{
+	display: block;
+	width: 100%;
+}
+.mydialog label
+{
+	margin-top: 10px;
+}
+.mydialog
+{
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
+#addentry_tagtable
+{
+	width: 100%;
+}
+#addentry_hashcontainer
+{
+	margin-top: 10px;
+	margin-bottom: 10px;      
+}
+.hashlist_lable {
+	border: solid 1px;
+	border-radius: 4px;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#selectable_container
+{
+  width: 100%;
+}
+#selectable 
+{ 
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0; 
+  width: 100%; 
+}
+#selectable li 
+{ 
+  margin: 3px; 
+  padding: 10px; 
+  font-size: 1.1em; 
+  border-radius: 10px;
+  text-align: left;
+  border: 1px solid #aaaaaa;
+  color: #222222;
+}
+#selectable li:hover 
+{ 
+  background: #0085cc;
+  color: white; 
+}
+#selectable .selected:hover, #selectable .selected 
+{ 
+  background: black; 
+  color: white; 
+}
+
+#entry_conteiner
+{
+  top:0px;
+  right:-100%;
+  margin-top:100px;
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
+  border-left: 5px solid #0085cc;
+  z-index: 100;
+  background-color: white;
+}
+#entry
+{
+  overflow: auto;
+  text-align: left;
+  font-weight: normal;
+}
+#entry_content, #entry .content_offset, #entry .content
+{
+  padding-left: 20px;
+}
+#entry_change_count
+{
+  width: 100px;
+}
+#entry a pre
+{
+  word-break: break-all;
+}

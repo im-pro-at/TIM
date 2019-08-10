@@ -1,0 +1,22 @@
+<?php
+/*
+  Settings
+  
+  Autor: Patrick Knöbel
+  Dieser Script ist gedankliches Eigentum von Patrick Knöbel
+*/
+
+//MYSQL settings
+define('server_sql',"");
+define('dbname_sql',"");
+define('benutzer_sql',"");
+define('passwort_sql',"");
+define('enable_debug',false);
+define('backup_key',''); //use "http[s]://YOURADRESS/php?event=admin&aevent=dump&backup_key=YOURKEY" to backup your data remotly
+
+
+//Admin E-Mail
+define('error_event_email',''); //error report email adress!
+
+
+?>
