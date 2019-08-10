@@ -117,7 +117,7 @@ function compairtags(o,n,tagconatiner)
 }
 
 function slideentryview(openClose,finisched) {
-		var animation1={ right: "-50%"}
+		var animation1={ right: "-52%"}
 		if(openClose){
 			animation1={right: 0};
     }
@@ -674,7 +674,7 @@ $(function() {
 			return  $("<pre \>").text(element.attr("title"));
 		},
     open: function (event, ui) {
-        ui.tooltip.css("max-width", "500px");
+        ui.tooltip.css("max-width", "50vw");
     }
   });
 	//make reach input filds:
@@ -709,7 +709,7 @@ $(function() {
 			enumerateSlides : false,                // put numbers on slides
 			linkable : false                        // link slides via hash						
 		});
-    $( "#entry"      ).css({width: $('body').width()/2-10, height: $('body').height()-110});
+    $( "#entry"      ).css({height:window.innerHeight-100});
   });
 	$(window).trigger( "resize" );
 	$('#slider').liteAccordion('next').liteAccordion('prev');
