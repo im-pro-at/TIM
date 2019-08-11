@@ -217,8 +217,8 @@ elseif($event=="newentry")
   if($price!="" and is_numeric($price)==false)
     error("PRICE is not valid!");
   //check tags 
-  if(is_array($tags)==FALSE or count($tags)<3)
-    error("Add at least 3 Tags! If necessary create a new one.");
+  if(is_array($tags)==FALSE or count($tags)<tag_min_num)
+    error("Add at least ".tag_min_num." Tags! If necessary create a new one.");
   foreach($tags as $tag)
   {
     $sql_ergebniss=$sql->query('SELECT `id` FROM `tag` WHERE `id` = \''.$sql->escape($tag).'\' ');

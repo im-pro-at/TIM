@@ -18,5 +18,7 @@ define('backup_key',''); //use "http[s]://YOURADRESS/php?event=admin&aevent=dump
 //Admin E-Mail
 define('error_event_email',''); //error report email adress!
 
+//Settings
+define('tag_min_num',3);
 
 ?>
