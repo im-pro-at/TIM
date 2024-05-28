@@ -11,9 +11,9 @@ $Database_Tabels=
 CREATE TABLE `user` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(100) NULL,
-  `password` varchar(100)  NULL,
-  `lastaktive` INT( 14 ) NOT NULL,
-  `cookie` varchar(100) NOT NULL,
+  `password` varchar(100) NULL,
+  `lastaktive` INT( 14 ) DEFAULT NULL,
+  `cookie` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=INNODB  DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=2 ;
 
