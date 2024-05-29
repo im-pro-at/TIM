@@ -62,9 +62,9 @@ CREATE TABLE `tag` (
 ';
 $Database_Admin_Entry=
 '
-INSERT INTO `user` (`id`, `name`, `password`, `lastaktive`, `cookie`) VALUES
-(0, "?", "", "", ""),
-(1, "admin", "5a52fc6648e5e02c69420711b3b89395abf8a8240be6f8f5b5bee0b8ade31073", 1511117379, "")
+INSERT INTO `user` (`id`, `name`, `password`) VALUES
+  (0, "?", ""),
+  (1, "admin", "5a52fc6648e5e02c69420711b3b89395abf8a8240be6f8f5b5bee0b8ade31073")
 ';
 
 
